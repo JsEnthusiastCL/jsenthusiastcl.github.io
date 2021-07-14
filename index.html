@@ -16,8 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" />
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script defer src="./assets/js/scripts.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.min.css" />
+  <script src="./assets/js/scripts.min.js"></script>
 </head>
 
 <body>
@@ -29,8 +29,8 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand ml-5 pl-5" href="./index.html">
-          <svg id="vc-logo-img" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
+        <a class="navbar-brand" href="./index.html">
+          <svg id="vc-logo-img" class="shadow-sm" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
             <g clip-rule="evenodd" fill-rule="evenodd">
               <path d="m503.929 306.615c-2.627 36.922-14.733 71.272-33.92 100.535-37.746 57.698-102.902 95.791-176.938 95.791-45.941 0-88.455-14.746-123.117-39.751-53.45-38.551-88.284-101.507-88.284-172.378l127.572-177.551 96.564-33.064c24.955 1.486 48.71 7.287 70.581 16.689 6.853 2.943 13.534 6.258 20.015 9.888 64.471 36.236 108.042 105.307 108.042 184.581-.001 5.144-.173 10.23-.515 15.26z" fill="#a6e7f0" />
               <path d="m396.401 106.774c64.471 36.236 108.042 105.307 108.042 184.581 0 5.144-.171 10.231-.514 15.26-4.825 32.235-60.531 29.149-63.472 1.057-2.712-25.863-26.554-26.52-37.518-27.606-27.01-2.743-39.259-22.062-4.768-67.385 28.724-37.751-76.606-76.073-21.785-115.795 6.852 2.943 13.534 6.258 20.015 9.888z" fill="#80d261" />
@@ -62,18 +62,18 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div id="vcNavMenu" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto mr-5 pr-5">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="./index.html">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+            <li class="nav-item presentacion">
+              <a class="nav-link" href="./index.html#presentacion">Quiénes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#destacados">Destacados</a>
+              <a class="nav-link" href="./index.html#destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
+              <a class="nav-link" href="./index.html#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -101,7 +101,7 @@
       </div>
     </header>
 
-    <section id="quienes-somos" class="container-fluid mb-5">
+    <section id="presentacion" class="container-fluid mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -132,6 +132,90 @@
       </div>
     </section>
 
+    <section id="destacados" class="container-fluid mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="mt-5 pb-2 text-center">Destacados</h3>
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col">
+            <div class="card-deck">
+              <div class="card" id="card-1">
+                <img class="card-img-top img-fluid card-img" src="./assets/img/card1.jpg" alt="Destino 1" />
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci. Donec mollis quis urna eget.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-2">
+                <img class="card-img-top img-fluid card-img" src="./assets/img/card2.jpg" alt="Destino 2" />
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Consectetur adipiscing elit</h5>
+                    <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-3">
+                <img class="card-img-top img-fluid card-img" src="./assets/img/card3.jpg" alt="Destino 3" />
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Sed do eiusmod tempor incididunt ut labore</h5>
+                    <p class="card-text">Integer luctus mauris et suscipit consectetur. Cras eu lorem ut ipsum viverra sollicitudin. Fusce id dapibus nisi. Ut cursus vitae libero non luctus.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-4">
+                <img class="card-img-top img-fluid card-img" src="./assets/img/card4.jpg" alt="Destino 4" />
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Ut enim ad minim veniam</h5>
+                    <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="container-fluid mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="mt-3 pb-2 text-center">Contacto</h3>
+            <hr />
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/K4OYi408?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container py-2">
+        <div class="row">
+          <div class="col footer-texto text-left ml-4">
+            <h2>VIAJES CHILE</h2>
+          </div>
+          <div class="col footer-rrss text-right mr-4">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square fa-3x"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-3x ml-2"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square fa-3x ml-2"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square fa-3x ml-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </div>
   <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -4,6 +4,10 @@ root {
   font-size: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Perfil resolución no soportada (min: 320px) */
 @media only screen and (max-width: 319px) {
   #supported {
@@ -25,6 +29,108 @@ root {
     display: none;
     visibility: hidden;
   }
+
+  header .presentacion {
+    display: none;
+    visibility: hidden;
+  }
+
+  #presentacion {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #not-supported {
+    display: none;
+    visibility: hidden;
+  }
+
+  header .presentacion {
+    display: none;
+    visibility: hidden;
+  }
+
+  #presentacion {
+    display: none;
+    visibility: hidden;
+  }
+
+  #destacados .card-deck .card {
+    margin-bottom: 2.5rem;
+    min-width: 20rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #not-supported {
+    display: none;
+    visibility: hidden;
+  }
+
+  header .presentacion {
+    display: block;
+    visibility: visible;
+  }
+
+  #presentacion {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header a.navbar-brand {
+    margin-left: 48px;
+    padding-left: 48px;
+  }
+
+  header ul.navbar-nav {
+    margin-right: 48px;
+    padding-right: 48px;
+  }
+  
+  header .presentacion {
+    display: block;
+    visibility: visible;
+  }
+  
+  #presentacion {
+    display: block;
+    visibility: visible;
+  }
+
+  #destacados .card-deck .card {
+    margin-bottom: 2.5rem;
+    min-width: 20rem !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header a.navbar-brand {
+    margin-left: 48px;
+    padding-left: 48px;
+  }
+
+  header ul.navbar-nav {
+    margin-right: 48px;
+    padding-right: 48px;
+  }
+  
+  header .presentacion {
+    display: block;
+    visibility: visible;
+  }
+
+  #presentacion {
+    display: block;
+    visibility: visible;
+  }
+  
+  #destacados .card-deck .card {
+    min-width: 15rem !important;
+  }
 }
 
 body {
@@ -32,12 +138,38 @@ body {
   color: #ffffff;
 }
 
+footer {
+  background-color: #2a9ba9;
+  min-height: 4rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: #ffffff;
+}
+
+footer h2 {
+  font-weight: 400;
+}
+
 h3 {
   font-weight: 300;
 }
 
+h5 {
+  font-weight: 300;
+  padding-bottom: 0.5em;
+}
+
 hr {
-  background-color: #81b9ca;
+  background-color: #2a9ba9;
   height: 2px;
 }
 
@@ -51,6 +183,10 @@ header .navbar {
   top: 10px;
   width: 100%;
   z-index: 10;
+}
+
+p {
+  font-weight: 300;
 }
 
 nav #vc-logo-img {
@@ -70,7 +206,17 @@ nav #vcNavMenu {
   vertical-align: middle;
 }
 
-#quienes-somos .quienes-bloque {
-  background-color: #81b9ca;
+#destacados .card-deck .card {
+  background-color: #2a9ba9;
+  border: 1px solid #ffffff;
+  min-width: 15rem;
+}
+
+#destacados .card-img {
+  height: 12rem;
+}
+
+#presentacion .quienes-bloque {
+  background-color: #2a9ba9;
   text-align: center;
 }
